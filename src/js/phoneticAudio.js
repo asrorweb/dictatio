@@ -5,7 +5,6 @@ export function playPhonetic(data) {
         data.forEach((phonetics) => {
             if (phonetics.audio) {
                 if (!(phoneticCout == 1)) {
-                    console.log(phonetics.audio);
                     music = phonetics.audio;
                     phoneticCout++;
                 }
@@ -15,6 +14,7 @@ export function playPhonetic(data) {
 
     if (music) {
         const phonetic = new Audio(music);
+        console.log(phonetic);
         phonetic.play();
     }
 }

@@ -102,7 +102,6 @@ export function createContainer(data) {
         data.phonetics.forEach((phonetics) => {
             if (phonetics.text) {
                 if (!(phoneticCout == 1)) {
-                    console.log(phonetics.text);
                     phoneticText.innerHTML = phonetics.text;
                     phoneticCout++;
                 }

@@ -49,11 +49,17 @@ body {
 }
 
 .loading {
+    width: 150px;
     display: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 479px) {
+    .loading {
+        width: 80px;
+    }
 }
 /* header */
 .header {
@@ -194,8 +200,10 @@ body {
     border-radius: 10px;
     transition: var(--transition);
 }
-#mode_btn:hover .mode_box {
-    background: #a445ed;
+@media screen and (min-width: 478px) {
+    #mode_btn:hover .mode_box {
+        background: #a445ed;
+    }
 }
 
 .mode_circle {
@@ -361,7 +369,7 @@ body {
 }
 .noun_info_list {
     list-style: none;
-    padding-left: 2.2rem;
+    padding-left: 4rem;
 }
 .noun_info_list li::before {
     content: "\2022";
@@ -373,6 +381,7 @@ body {
 }
 .noun_info_card {
     list-style: none;
+    padding-left: 4rem;
 }
 .noun_info_card li::before {
     content: "\2022";
