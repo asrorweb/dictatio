@@ -14,7 +14,6 @@ export function playPhonetic(data) {
 
     if (music) {
         const phonetic = new Audio(music);
-        console.log(phonetic);
         phonetic.play();
     }
 }

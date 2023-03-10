@@ -66,6 +66,11 @@ body {
     margin-bottom: 4.5rem;
     padding-top: 5.8rem;
 }
+@media screen and (max-width: 478px) {
+    .header {
+        padding-top: 4rem;
+    }
+}
 .header__settings {
     display: flex;
     align-items: center;
@@ -100,14 +105,10 @@ body {
 .hidden {
     display: none;
 }
-/* @media screen and (min-width: 478px) {
-    .setings__shrift__btn:hover .dropdown {
-        display: block !important;
-    }
-} */
+
 @media screen and (max-width: 478px) {
     .dropdown {
-        right: auto;
+        right: -50%;
         font-size: 14px;
         line-height: 24px;
     }

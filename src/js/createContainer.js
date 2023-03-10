@@ -7,7 +7,6 @@ import { input } from "./form";
 export const containerCard = document.querySelector(".content_box");
 
 export function createContainer(data) {
-    console.log(data);
     containerCard.innerHTML = "";
     const { word, phonetic, sourceUrls, meanings, phonetics } = data;
     input.value = word;
