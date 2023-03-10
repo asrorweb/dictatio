@@ -1,4 +1,4 @@
-export async function playPhonetic(data) {
+export function playPhonetic(data) {
     let music;
     if (data) {
         let phoneticCout = 0;
@@ -14,7 +14,7 @@ export async function playPhonetic(data) {
     }
 
     if (music) {
-        const phonetic = await new Audio(music);
-        await phonetic.play();
+        const phonetic = new Audio(music);
+        phonetic.play();
     }
 }

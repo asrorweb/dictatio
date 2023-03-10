@@ -51,11 +51,11 @@ module.exports = {
                 use: ["style-loader", "css-loader"],
             },
             {
-                test: /\.(jpe?g|png|gif|svg)$/i,
-                loader: "file-loader",
-                generator: {
-                    filename: "images/[name]-[hash][ext]",
-                },
+                // test: /\.(jpe?g|png|gif|svg)$/i,
+                // loader: "file-loader",
+                // generator: {
+                //     filename: "[name]-[hash][ext]",
+                // },
             },
             {
                 test: /\.html$/i,
