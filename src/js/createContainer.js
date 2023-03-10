@@ -2,6 +2,7 @@ import { API } from "./api";
 import { playPhonetic } from "./phoneticAudio";
 import { fetchApi } from "./request";
 import { synonymsBtn } from "./synonms";
+import { input } from "./form";
 
 export const containerCard = document.querySelector(".content_box");
 
@@ -9,7 +10,7 @@ export function createContainer(data) {
     console.log(data);
     containerCard.innerHTML = "";
     const { word, phonetic, sourceUrls, meanings, phonetics } = data;
-
+    input.value = word;
     containerCard.innerHTML = `
     <div class="content_box">
         <div class="request_result_box">
@@ -125,7 +126,7 @@ export function createContainer(data) {
         // synonyms
         data.meanings[0].synonyms.forEach((syn) => {
             let synonymItem = document.createElement("li");
-            synonymItem.className = "synonyms_word ";
+            synonymItem.className = "synonyms_word";
             synonymItem.innerHTML = syn;
             synonymsList.appendChild(synonymItem);
         });

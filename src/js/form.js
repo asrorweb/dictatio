@@ -4,7 +4,7 @@ import { API } from "./api";
 import { error } from "./error";
 
 const form = document.querySelector(".form");
-const input = document.querySelector(".input");
+export const input = document.querySelector(".input");
 
 window.addEventListener("load", () => {
     let word = localStorage.getItem("word");
