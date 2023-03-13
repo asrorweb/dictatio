@@ -155,7 +155,7 @@ export function createContainer(data) {
         });
 
         // definition
-        if (data.meanings[0].definitions) {
+        if (data.meanings[0]) {
             data.meanings[0].definitions.forEach((element, index) => {
                 if (limitVerbInfo) {
                     if (!(index == 2)) {
@@ -186,7 +186,7 @@ export function createContainer(data) {
     if (verbloc) {
         let verbList = document.querySelector(".noun_info_list");
         let limitVerbInfo = true;
-        if (data.meanings[1].definitions) {
+        if (data.meanings[1]) {
             data.meanings[1].definitions.forEach((element, index) => {
                 if (limitVerbInfo) {
                     if (!(index == 2)) {
